@@ -1,3 +1,5 @@
+/** Hero section **/
+
 .hero {
   margin-top: 60px;
   min-height: 300px;
@@ -23,7 +25,7 @@
   overflow: hidden;
 }
 
-/** contact section **/
+/** Contact section **/
 
 .contact {
   background: var(--secondary-color);
