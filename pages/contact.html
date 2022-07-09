@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Sign up with us" >
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" >
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./../styles/shared.css" >
+    <link rel="stylesheet" href="./../styles/contact.css" >
+  </head>
+  <body>
+    <header class="header">
+      <h3><a href="./../index.html" class="header__logo">Egency</a></h3>
+
+      <div class="menu" aria-hidden="”true”">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="desktop-nav">
+        <ul class="desktop-nav__list">
+          <li class="desktop-nav__item">
+            <a href="./../index.html" class="desktop-nav__link"> Home</a>
+          </li>
+          <li class="desktop-nav__item">
+            <a href="./about.html" class="desktop-nav__link"> About</a>
+          </li>
+          <li class="desktop-nav__item">
+            <a href="./contact.html" class="desktop-nav__link"> Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+
+      <input
+        type="checkbox"
+        class="mobile-check"
+        aria-label="Open the mobile nav "
+      >
+      <nav class="mobile-nav">
+        <ul class="mobile-nav__list">
+          <li class="mobile-nav__item">
+            <a href="./../index.html">
+              <img src="./../images/home.svg" alt="home icon" >
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./about.html">
+              <img src="./../images/about.svg" alt="about icon" >
+              <span>About</span>
+            </a>
+          </li>
+          <li class="mobile-nav__item">
+            <a href="./contact.html">
+                <img src="./../images/signup.svg" 
+                     alt="sing up icon" 
+                >
+                <span>Sign Up</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Let's talk about
+        your project</h1>
+    </section>
+
+    <section class="contact">
+        <form action="#">
+            <ul class="contact__list--primary">
+                <li class="contact__item--primary">
+                    <ul class="contact__list--secondary">
+                        <li class="contact__item--secondary">
+                            <label class="sr-only" for="firstname">First Name</label>
+                            <input id="firstname" 
+                                   class="contact__input" 
+                                   type="text" 
+                                   name="firstname"  
+                                   placeholder="First name" 
+                            >
+                        </li>
+                        <li class="contact__item--secondary">
+                            <label class="sr-only" for="lastname">Last Name</label>
+                            <input id="lastname" 
+                                   class="contact__input" 
+                                   type="text" 
+                                   name="lastname"  
+                                   placeholder="Last name" 
+                            >
+                        </li>
+                    </ul>
+                </li> 
+                <li class="contact__item--primary">
+                    <ul class="contact__list--secondary">
+                        <li class="contact__item--secondary">
+                            <label class="sr-only" for="email">Email address</label>
+                            <input id="email" 
+                                   class="contact__input" 
+                                   type="email" 
+                                   name="email"  
+                                   placeholder="Email address" 
+                            >
+                        </li>
+                        <li class="contact__item--secondary">
+                            <label class="sr-only" for="phone">Phone number</label>
+                            <input id="phone" 
+                                   class="contact__input" 
+                                   type="tel" 
+                                   name="phone"  
+                                   placeholder="Phone number" 
+                            >
+                        </li>
+                    </ul>
+                </li>
+                <li class="contact__item--primary">
+                    <textarea id="message" 
+                              class="contact__input" name="message" 
+                              placeholder="Your message" 
+                    >
+                    </textarea>
+                </li> 
+                <li class="contact__item--primary">
+                    <p>We’ll use your personal information only to communicate and handle your inquiry.</p>
+                    <p>From time to time, we would like to contact you about our products and services
+                     and other content that may interest you. If you consent to contact for this purpose, 
+                     please tick below:
+                    </p>
+                    <input type="checkbox" name="agreement" id="agreement">
+                    <label for="agreement">I agree to receive other marketing communications from 
+                      Egency.
+                    </label>
+                </li> 
+                <li class="contact__item--primary">
+                    <button type="submit" class="btn">
+                        Sign Up
+                    </button>
+                </li>    
+            </ul>
+        </form>
+    </section>
+
+    <footer>
+      <p class="copyright">Copyright © 2022 Alaa Abbas</p>
+    </footer>
+  </body>
+</html>

@@ -41,21 +41,6 @@
   filter: brightness(115%);
 }
 
-.btn {
-  background-color: var(--btn-color);
-  font-size: 0.756rem;
-  color: var(--secondary-color);
-  padding: 8px 20px;
-  border: none;
-  border-radius: 6px;
-  transition: 0.6s box-shadow ease;
-  cursor: pointer;
-}
-
-.btn:hover {
-  box-shadow: inset 6.7em 0 0 0 var(--secondary-color);
-  color: var(--btn-color);
-}
 /** Information section **/
 
 .information {
@@ -207,14 +192,10 @@
     filter: none;
   }
 
-  .btn:hover {
-    box-shadow: none;
-    color: var(--secondary-color);
-  }
-
   .information__item img {
     transition: none;
   }
+
   .information__item:hover img {
     transform: scale(1);
     border: none;

@@ -16,7 +16,7 @@
   font-weight: lighter;
 }
 
-/**Header and Footer**/
+/**Header Footer and buttons **/
 :root {
   --primary-color: #1f2937; /*Hero & Footer bg & Info header txt & Quote txt*/
   --secondary-color: #f9faf8; /*hero main txt & header logo txt */
@@ -68,7 +68,6 @@ ul {
   display: flex;
   align-items: center;
   padding: 0 140px;
-
   justify-content: space-between;
 }
 
@@ -118,6 +117,24 @@ footer p {
   margin: 0;
   color: var(--secondary-color);
   font-size: 0.75504rem;
+}
+
+/** Button **/
+
+.btn {
+  background-color: var(--btn-color);
+  font-size: 0.756rem;
+  color: var(--secondary-color);
+  padding: 8px 20px;
+  border: none;
+  border-radius: 6px;
+  transition: 0.6s box-shadow ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: inset 6.7em 0 0 0 var(--secondary-color);
+  color: var(--btn-color);
 }
 
 @media (max-width: 760px) {
@@ -186,5 +203,10 @@ footer p {
 
   .mobile-check:checked + .mobile-nav {
     display: block;
+  }
+
+  .btn:hover {
+    box-shadow: none;
+    color: var(--secondary-color);
   }
 }
