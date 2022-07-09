@@ -1,0 +1,88 @@
+.hero {
+  margin-top: 60px;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color);
+  padding: 0 140px;
+  margin-top: 60px;
+}
+
+.hero h1 {
+  margin-top: 100px;
+  color: var(--secondary-color);
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.information img {
+  position: absolute;
+  top: -44%;
+  animation: rotation 2s 1 linear;
+}
+
+@keyframes example {
+  from {
+    transform: rotateY(0) skewY(0);
+  }
+  to {
+    transform: rotateY(30deg) skewY(-10deg);
+  }
+}
+
+.information article {
+  padding: 20px 40px;
+  border: 4px solid var(--primary-color);
+  border-radius: 20px;
+  margin: 240px 0 32px;
+  max-width: 700px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  animation-name: example;
+  animation-duration: 1s;
+  animation-iteration-count: 4;
+  animation-direction: alternate;
+  perspective: 1000px;
+  transition: 1s transform ease;
+}
+
+.information article:hover {
+  transform: rotateY(30deg) skewY(10deg);
+}
+
+.information h2 {
+  text-align: center;
+}
+
+.information p {
+  text-align: justify;
+}
+
+@media (max-width: 760px) {
+  .information img {
+    animation: none;
+    width: 290px;
+    top: -35%;
+  }
+  .information article {
+    animation: none;
+  }
+  .information article:hover {
+    transform: rotateY(0) skewY(0);
+  }
+}
